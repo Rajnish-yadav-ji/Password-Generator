@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <title>PassWord Generator</title>
+</head>
+<body>
+    <div class="mainDiv">
+        <h1 style="text-align: center;">Password Generator</h1>
+        <div class="firstDiv">
+            <h1 id="newPass"></h1>
+            <div>
+                <i class="fa-regular fa-copy" id="copyBtn"></i>
+            </div>
+        </div>
+        <hr>
+        <div class="secondDiv">
+            <p id="Lenght">Password Lenght</p>
+            <div class="sec-inner">
+                <input type="range" id="range" min="8" max="20" value="10">
+                <p id="rangeVal"></p>
+            </div>
+            
+        </div>
+        <hr>
+        <div class="thirtDiv">
+            <div>
+                <input type="checkbox" checked name="capLet" id="capLet">
+               <label for="capLet">UpperCase</label>
+            </div>
+            <div>
+                <input type="checkbox" name="samLet" id="samLet">
+                <label for="samLet">LowerCase</label>
+            </div>
+            <div>
+                <input type="checkbox" checked name="number" id="number">
+                <label for="number">Number</label>
+            </div>
+            <div>
+                <input type="checkbox" name="symbol" id="symbol">
+                <label for="symbol">Symbol</label> <br>
+            </div>
+        </div>
+        <div class="lastDiv">
+            <button id="genPas">Generate Password</button>
+        </div>
+        
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>
