@@ -38,7 +38,8 @@ btn.addEventListener('click', ()=>{
        finalStr += symbolStr
     }
     if(finalStr === ''){
-        alert("Please Select atleast one checkbox !")
+        alert("Please Select atleast one checkbox !");
+        return;
     }
     console.log(finalStr)
     let letestPass = ''
